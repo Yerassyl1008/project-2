@@ -47,8 +47,8 @@ a:hover {
 .btn::before {
   content: "";
   background-image: url('./imgs/Group.svg');
-  height: 21px;
-  width: 21px;
+  height: 22px;
+  width: 22px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -95,9 +95,7 @@ img {
 
 /* main style starts */
 
-.main {}
 
-.welcome {}
 
 .welcome .container {
   display: flex;
@@ -108,7 +106,7 @@ img {
   padding-top: 160px;
 }
 
-.welcome__desc {}
+
 
 .weclome__title {
   width: 500px;
@@ -127,7 +125,7 @@ img {
 
 
 
-.welcome__btn {}
+
 
 .welcome__image {
   margin-right: 80px;
@@ -144,10 +142,9 @@ img {
 
 
 .works {
-  padding: 145px 0;
+  padding: 146px 0;
 }
 
-.container {}
 
 
 .works_btn {
@@ -169,12 +166,11 @@ img {
 
 }
 
-.works__icons {}
 
 .works__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 24px;
 
   padding-top: 140px;
 }
@@ -194,7 +190,7 @@ img {
   opacity: 1;
 }
 
-.work:nth-child(odd){
+.work:nth-child(odd) {
   margin-top: -140px;
 }
 
@@ -237,14 +233,12 @@ img {
   margin-top: 200px;
 }
 
-.projects .container {
-  
-}
 
-.title{
+
+.title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 49px;
+  line-height: 48px;
   text-align: center;
   letter-spacing: -0.5px;
   color: #DEDEDE;
@@ -273,9 +267,11 @@ img {
 
 .projects__images-wrapper_2 {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: space-evenly;
 }
+
 .projects__img_2 {
   width: 400px;
   height: 560px;
@@ -291,42 +287,29 @@ img {
 }
 
 .contact .container {
-  max-width: 521px;
+  max-width: 520px;
   text-align: center;
-  
-}
-
-.title {
 
 }
 
-.contact__title {
 
-}
 
 .contact__text {
   /* If you are looking to hire a product designer, I’m currently available for freelance work */
 
-font-weight: 600;
-font-size: 26px;
-line-height: 38px;
-/* or 146% */
-text-align: center;
-letter-spacing: -0.5px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 38px;
+  /* or 146% */
+  text-align: center;
+  letter-spacing: -0.5px;
 
-color: #959595;
-margin-bottom: 48px;
+  color: #959595;
+  margin-bottom: 48px;
 
-
-}
-
-.btn {
 
 }
 
-.contact_btn {
-
-}
 
 
 
@@ -338,7 +321,7 @@ margin-bottom: 48px;
 .footer .container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 
 .footer_copy {
@@ -352,13 +335,49 @@ margin-bottom: 48px;
 .socials {
   display: flex;
   justify-content: flex-end;
-  gap: 25px;
+  gap: 26px;
 }
 
-.socials__link {
 
+
+
+@media (max-width: 1100px) {
+  .welcome__image {
+    margin-right: 0px;
+  }
 }
 
-.socials__img {
 
+@media (max-width: 950px){
+  .weclome__title{
+    width: auto;
+  }
+  .welcome{
+    margin-top: 70px;
+  }
+  .welcome .container{
+    flex-direction: column-reverse;
+    gap: 64px;
+  }
+
+  .welcome__text{
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  .welcome__desc{
+    text-align: center;
+  }
+
+  .work{
+    height: 600px;
+  }
 }
+
+@media (max-width: 770px) {
+  .welcome__title{
+    font-size: 36px;
+  }
+}
+
+
